@@ -1,8 +1,7 @@
-
 CC = gcc
 CFLAGS = -c –Wall -Werror
-EXECUTABLE = coder
-SOURCES = src-utf-8/main.c src-utf-8/command.c src-utf-8/coder.c
+EXECUTABLE = main
+SOURCES = src-varint/main.c src-varint/num.c src-varint/varint.c
 OBJECTS=$(SOURCES: .c=.o)
 
 all:	$(SOURCES) $(EXECUTABLE)
